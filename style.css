@@ -42,15 +42,12 @@ nav {
 
 main {
   grid-area: main;
-  justify-content: center;
-  align-items: center;
 }
 
 footer {
   grid-area: footer;
   font-size: 14px;
-  margin-top: 20%;
-  position: flex;
+  margin-bottom: 03%;
 }
 
 button {
@@ -60,3 +57,14 @@ button {
   border-radius: 5rem;
   background-image: url("img/vegeta_bbBlue.jpg");
 }
+
+ol {
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0%;
+}
+ol > li > ol {
+  margin-left: 0;
+  padding-left: 0%;
+        }
