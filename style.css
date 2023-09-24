@@ -64,7 +64,34 @@ ol {
   padding-left: 0;
   padding-right: 0%;
 }
+
 ol > li > ol {
   margin-left: 0;
   padding-left: 0%;
-        }
+}
+
+table {
+  width: 80%;
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-image: url("img/vegeta_bbBlue.jpg");
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+td {
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
