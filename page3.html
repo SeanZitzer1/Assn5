@@ -1,0 +1,81 @@
+<!--
+    Filename: page3.html
+    Description: Page with a form inside a table
+    Author: Sean Zitzer
+    Date Created: 10-21-2023
+    Last Updated: 10-23-2023
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+          <h1>Welcome to Project 2! Forms...</h1>
+        </div>
+    </header>
+    <nav>
+        <ul style="list-style-type:none;">
+          <li>
+            <button onclick="document.location='index.html'">Home</button>  
+          </li>
+          <li>
+            <button onclick="document.location='page1.html'">Page 1</button>  
+          </li>
+          <li>
+            <button onclick="document.location='page2.html'">Page 2</button>
+          </li>
+          <li>
+            <button onclick="document.location='page3.html'">Page 3</button>
+          </li>
+          <li>
+            <button onclick="document.location='https://www.columbusstate.edu/'" id="focus">
+              CSU Main Page</button>
+          </li>
+        </ul>
+    </nav>
+
+    <main>
+      <table>
+          <thead>
+              <tr>
+                  <th>Registration Form</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td colspan="2">
+                      <form action="https://webdevbasics.net/scripts/yoga.php" method="post" onsubmit="return validateForm();">
+                          First Name: <input type="text" name="firstName" size="50" maxlength="50"><br>
+                          Last Name: <input type="text" name="lastName" size="50" maxlength="50"><br>
+                          Birth Year: <input type="text" name="birthYear" size="15" maxlength="25"><br> <!-- Now this could be a number and set a start year and a max year for age verification maybe-->
+                          Email: <input type="email" name="email" id="email"><br>
+                          Username: <input type="text" name="username" id="username" maxlength="10" minlength="5" required><br>
+                          Password: <input type="password" name="password" id="password" minlength="8" required><br>
+                          Re-enter Password: <input type="password" name="rePassword" id="rePassword" required><br>
+                          Phone Number: <input type="tel" name="phone" id="phone" placeholder="###-###-####"><br>
+                          <input type="submit" value="Submit">
+                      </form>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+    </main>
+
+    <footer>
+        <h3>Contact Information</h3>
+        <p>Organization: Blah Blah Technical Solutions LLC,</p>
+        <p>Email Address: blahblah123@bbts.com</p>             
+        <p>Phone Number: 123-456-7890</p>
+        <h3>We look forward to hearing from you!</h3>
+    </footer>
+</body>
+
+</html>
+
