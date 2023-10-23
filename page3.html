@@ -51,9 +51,9 @@
           <tbody>
               <tr>
                   <td colspan="2">
-                      <form action="https://webdevbasics.net/scripts/yoga.php" method="post" onsubmit="return validateForm();">
-                          First Name: <input type="text" name="firstName" size="50" maxlength="50"><br>
-                          Last Name: <input type="text" name="lastName" size="50" maxlength="50"><br>
+                      <form name="registrationForm" action="https://webdevbasics.net/scripts/yoga.php" method="post" onsubmit="return validateForm();">
+                          First Name: <input type="text" id="firstname" name="firstName" size="50" maxlength="50"><br>
+                          Last Name: <input type="text" id="lastname" name="lastName" size="50" maxlength="50"><br>
                           Birth Year: <input type="text" name="birthYear" size="15" maxlength="25"><br> <!-- Now this could be a number and set a start year and a max year for age verification maybe-->
                           Email: <input type="email" name="email" id="email"><br>
                           Username: <input type="text" name="username" id="username" maxlength="10" minlength="5" required><br>
