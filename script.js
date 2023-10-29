@@ -47,3 +47,30 @@ function validateForm() {
 
     return true;
 }
+
+window.onload = function() {
+    drawShape();
+};
+
+function drawShape() {
+    var canvas = document.getElementById('mycanvas');
+
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#00F';
+        ctx.font = 'Italic 30px Sans-Serif';
+        ctx.textBaseline = 'Top';
+        ctx.fillText('Hello Canvas!', 40, 100);
+
+    } else {
+        alert('You need Safari or Firefox 1.5+ to see this demo.');
+    }
+}
+
+function clearCanvas() {
+    var canvas = document.getElementById('mycanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+

@@ -28,7 +28,7 @@ body {
   color: black;
   text-align: center;
   display: grid;
-  grid-template-areas: 'header header header header header header' 'nav main main main main main' 'nav main main main main main' 'footer footer footer footer footer footer';
+  grid-template-areas: 'header header header' 'nav main aside' 'footer footer foooter';
   gap: 10px;
   padding: 10px;
 }
@@ -40,8 +40,23 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    body {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+
 header {
   grid-area: header;
+  margin-bottom: 20px;
 }
 
 nav {
@@ -52,10 +67,25 @@ main {
   grid-area: main;
 }
 
+aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+
 footer {
   grid-area: footer;
   font-size: 14px;
   margin-bottom: 03%;
+}
+
+canvas{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
